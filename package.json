@@ -1,0 +1,26 @@
+{
+  "name": "s3-iveused-pwa",
+  "version": "1.0.0",
+  "description": "## Over dit project I've Used is een progressieve web applicatie. I've Used genereerd een overzicht en laat de gebruiker weten wanneer ze op een veilige, legale en verantwoorde manier weer deel kunnen nemen aan het verkeer na het consumeren van gebruiksmiddelen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.fhict.nl/I484553/s3-iveused-pwa.git"
+  },
+  "author": "Ruben van de Ven",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^12.6.0",
+    "vue-loader": "^16.8.3"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.2",
+    "vue": "^3.2.45"
+  }
+}

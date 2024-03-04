@@ -1,0 +1,53 @@
+.home
+    display: flex
+    position: relative
+    align-items: center
+    flex-direction: column
+
+    &::before, &::after
+        left: 3rem
+        content: ""
+        z-index: -1
+        top: 10.5rem
+        height: 9rem
+        position: absolute
+        width: calc(50% - 3rem)
+        background-image: linear-gradient(to left, $color-primary, $color-white)
+
+    &::after
+        right: 3rem
+        left: initial
+        background-image: linear-gradient(to right, $color-primary, $color-white)
+
+    &__add-btn
+        margin-top: 3rem
+        font-weight: 700
+        font-size: 1.8rem
+        align-self: stretch
+        padding: 1.5rem 2.5rem
+
+        svg
+            &:first-child
+                margin-right: 1.5rem
+
+            &:last-child
+                margin-left: 1.5rem
+
+    &__overlay
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        height: 100%
+        z-index: 999
+        opacity: .75
+        position: absolute
+        background-color: $color-black
+
+        &--active
+            display: block
+
+    &__popup
+        &-box
+
+        &__inner

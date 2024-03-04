@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Include custom Stylesheet -->
+        <link rel="stylesheet" type="" type="text/css" href="./dist/css/stylesheet.css">
+
+        <!-- Include custom Javascript file -->
+        <script src="./dist/js/app.js" type="module" defer></script>
+
+        <!-- Document title -->
+        <title>I'veUsed App {% if page != "" %}- {{ page|capitalize|replace({"-": " "}) }}{% endif %}</title>
+
+        <!-- Include favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./dist/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./dist/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./dist/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./dist/favicon/site.webmanifest">
+        <link rel="mask-icon" href="./dist/favicon/safari-pinned-tab.svg" color="#49bcf9">
+        <meta name="msapplication-TileColor" content="#49bcf9">
+        <meta name="theme-color" content="#49bcf9">
+    </head>
+    <body>
+        <div id="app">
+            {# Include specfic requested page #}
+            {% include "pages/" ~ page ~ ".twig" %}
+
+            {# Include global navigation #}
+            <navigation pages="{{ pages|json_encode() }}" />
+        </div>
+    </body>
+</html>

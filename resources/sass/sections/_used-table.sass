@@ -1,0 +1,42 @@
+.used-table
+    margin-top: 3.5rem
+    align-self: stretch
+
+    &__overview
+        display: flex
+        flex-direction: column
+        background-color: $color-light-grey
+
+    &__head
+        font-weight: 600
+        font-size: 1.4rem
+        color: $color-black
+        padding-bottom: .25rem
+
+        &:first-child
+            text-align: left !important
+
+    &__row
+        display: flex
+        color: $color-grey
+        justify-content: space-between
+
+        span
+            width: calc(100% / 3)
+            text-align: center
+
+        &:not(:last-child)
+            margin-bottom: 1.5rem
+
+    &__type
+        display: flex
+        align-items: center
+
+        svg
+            margin-right: 1.25rem
+
+    &__more
+        font-weight: 600
+        font-size: 1.4rem
+        align-self: center
+        color: $color-primary

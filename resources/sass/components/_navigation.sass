@@ -1,0 +1,44 @@
+.navigation
+    width: 37.5rem
+    position: fixed
+    padding: 2.5rem 0
+    
+    &::before
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        content: ""
+        z-index: -2
+        position: absolute
+        background-color: $color-primary
+
+    .container
+        display: flex
+        justify-content: space-between
+
+    &__icon 
+        svg
+            z-index: 1
+            display: block
+            fill: $color-white
+
+        &--active
+            position: relative
+
+            svg
+                scale: 0.8
+                fill: $color-primary
+                transform-origin: center
+
+            &::before
+                top: 50%
+                left: 50%
+                z-index: -1
+                content: ""
+                width: 4.5rem
+                height: 4.5rem
+                position: absolute
+                border-radius: 50%
+                background-color: white
+                transform: translate(-50%, -50%)

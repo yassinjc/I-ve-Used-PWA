@@ -1,0 +1,63 @@
+.map
+    &__wrapper
+        padding: 0
+        position: relative
+
+    &__cross
+        top: 0
+        right: 0
+        position: absolute
+
+    &__title
+        margin-bottom: 3rem
+
+    &__instruction
+        display: flex
+        align-items: center
+
+        p
+            flex: 1
+            line-height: 1.6
+            color: $color-grey
+            margin-left: 2.5rem
+
+        svg
+            width: 2.4rem
+            display: block
+
+        &s
+            display: flex
+            margin-bottom: 2.5rem
+            flex-direction: column
+
+        &:first-child svg
+            width: 2.8rem
+
+        &:not(:last-child)
+            margin-bottom: 2rem
+
+    &__label
+        font-size: 1.4rem
+        color: $color-white
+        padding: .8rem 1.5rem
+        background-color: $color-primary
+        border-radius: calc($border-radius / 2)
+
+        &:not(:last-child)
+            margin-right: 1rem
+
+        &s
+            display: flex
+
+    &__image
+        width: 100%
+        display: block
+        margin-top: 1.5rem
+        border-radius: calc($border-radius / 2)
+
+    &__paragraph
+        font-weight: 400
+        font-size: 1.5rem
+        line-height: 1.55
+        color: $color-grey
+        margin-top: 1.75rem

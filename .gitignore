@@ -1,0 +1,8 @@
+node_modules
+variables.php
+
+dist/js/*
+dist/css/*
+
+composer.lock
+package-lock.json

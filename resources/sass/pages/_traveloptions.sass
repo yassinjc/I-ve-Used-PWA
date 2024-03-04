@@ -1,0 +1,189 @@
+.traveloptions
+    padding: 1.5rem 1.5rem 2em 1.5rem
+
+    margin: 1% 1% 0% 1%
+
+    border-radius: $border-radius
+    position: relative
+
+    background-color: $color-primary-75
+    &__form
+        color: $color-white
+        position: relative
+        
+        &__field
+            color: $color-gray
+            font-size: 1.3rem
+            display: flex
+            gap: 1.3rem
+            align-items: center
+            margin: 3% 0% 3% 0%
+
+            background-color: $color-white
+            border-radius: $border-radius
+
+        &__arrow
+            position: relative
+            margin-left: 1.4rem
+            margin-bottom: -1rem
+    &__date
+
+        color: $color-white  
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &__field
+
+            color: $color-gray
+            font-size: 1.3rem
+            display: flex
+            gap: 1.3rem
+            align-items: center
+            margin: 3% 0% 3% 0%
+
+            background-color: $color-white
+            border-radius: $border-radius
+
+    &__optionsbutton
+        background-color: $color-primary
+        justify-content: center
+        color: $color-white
+        font-size: 1.3rem
+
+        font-family: inherit
+        border: none
+        cursor: pointer
+
+        display: flex
+        gap: 1.3rem
+        align-items: flex-end
+
+        position: absolute
+        padding: 1.3rem
+
+        left: 1.5rem
+        right: 1.5rem
+        
+        border-radius: $border-radius
+
+        bottom: 0
+        transform: translateY(50%)
+
+        
+.filter
+
+    font-size: 1.3rem
+    font-weight: 600
+    margin-top: 4rem
+
+    &__container
+        margin-top: 1.5rem
+        display: flex
+        gap: 1.5rem
+        overflow: scroll
+        &::-webkit-scrollbar 
+            display: none
+
+        &__button
+            display: flex
+            align-content: center
+            background-color: $color-primary
+            color: $color-white
+            gap: 1rem
+            border-radius: 0.5rem
+
+            justify-content: space-between
+            align-items: center
+            padding: 1rem 2rem
+
+            font-family: inherit
+            border: none
+            cursor: pointer
+
+            &.active
+                background-color: $color-gray
+
+            
+        
+       
+
+.options
+    margin-top: 2rem
+    font-size: 1.3rem
+    font-weight: 600
+
+    &__field
+        margin-top: 2rem
+        background-color: $color-white-secondary
+        padding: 1.5rem 1.5rem 1.5em 1.5rem
+        border-radius: $border-radius
+        position: relative
+        font-size: 1.3rem
+        
+
+        &__name
+            font-weight: 500
+            display: flex
+            align-items: center
+            gap: 2rem
+            margin-bottom: 1.3rem
+        &__info   
+            &__TOA
+                display: flex
+                font-weight: 400
+                color: $color-gray
+                margin-bottom: 0.8rem 
+                position: relative
+                &__time
+                    color: $color-black
+                    position: absolute
+                    left: 50%
+            &__place
+                display: flex
+                font-weight: 400
+                color: $color-gray
+                margin-bottom: 0.8rem
+                position: relative
+                &__place
+                    color: $color-black
+                    position: absolute
+                    left: 50% 
+            &__info
+                font-weight: 400
+                color: $color-primary
+                display: flex
+                justify-content: center
+.inputStyle
+
+    border: none  
+    outline: none  
+    width: 100%
+    padding: 1.2rem 0rem
+    border-radius: $border-radius
+    margin-left: 4rem
+    position: relative
+
+.inputStyle::placeholder 
+
+    color: inherit   
+
+.inputStyle:focus
+
+    border: none    
+
+input[type="date"]::-webkit-calendar-picker-indicator 
+    -webkit-appearance: none
+    background-image: none
+
+input[type="time"]::-webkit-calendar-picker-indicator 
+    -webkit-appearance: none
+    background-image: none
+
+.iconInput
+
+    position: absolute
+    transform: translateX(100%)
+
+#first_field_form
+    margin-bottom: -1rem

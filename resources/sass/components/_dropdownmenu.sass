@@ -1,0 +1,64 @@
+.dropdown-container
+    position: relative
+
+    font-size: inherit
+    
+    .optionbutton
+
+        margin: 0
+        height: 4rem
+        background-color: $color-white-third
+        padding: 0em 1.3rem
+            
+        border-radius: $border-radius
+
+        display: flex
+
+        align-items: center
+        justify-content: space-between
+
+        &__text
+            color: $color-black
+
+        &__arrow
+            top: 1.3rem
+            transition: 0.2s
+    .menulist
+        display: none
+
+    &.active
+        .optionbutton
+
+            border-radius: $border-radius $border-radius 0px 0px 
+
+            &__arrow
+                rotate: 180deg
+                transition: 0.2s
+        ul
+            display: block
+            position: absolute
+            list-style: none
+            width: 100%
+            background-color: $color-white-third
+            z-index: 99
+            border-radius: 0px 0px $border-radius $border-radius
+
+            li
+                top: 100%
+                padding: 0 1.3rem
+                position: relative
+                border-style: solid none none none
+                border-color: $color-white-secondary
+
+.dropdownBackground
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: transparent
+    display: none
+    
+    &.active
+
+        display: block

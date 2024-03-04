@@ -1,0 +1,156 @@
+<main>
+    <div class="traveloptions">
+        <div class="traveloptions__form">
+            <p>Locations</p>
+
+            <div id="first_field_form" class="traveloptions__form__field">
+                <svg class="iconInput" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M5.383,15.677C.843,9.095,0,8.419,0,6A6,6,0,1,1,12,6c0,2.419-.843,3.095-5.383,9.677a.75.75,0,0,1-1.233,0ZM6,8.5A2.5,2.5,0,1,0,3.5,6,2.5,2.5,0,0,0,6,8.5Z" fill="#49bcf9"/>
+                </svg>
+
+                <input placeholder="From: Adress or Zip-code" value="" class="inputStyle">
+            </div>
+
+            <svg class="traveloptions__form__arrow" xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
+            <g id="Group_321" data-name="Group 321" transform="translate(-176 -180)">
+            <line id="Line_23" data-name="Line 23" y2="6" transform="translate(180 180)" fill="none" stroke="#ffffff" stroke-width="2"/>
+            <path id="Polygon_3" data-name="Polygon 3" d="M4,0,8,7H0Z" transform="translate(184 193) rotate(180)" fill="#ffffff"/>
+            </g>
+            </svg>
+
+            <div class="traveloptions__form__field">
+                <svg class="iconInput" xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M5.383,15.677C.843,9.095,0,8.419,0,6A6,6,0,1,1,12,6c0,2.419-.843,3.095-5.383,9.677a.75.75,0,0,1-1.233,0ZM6,8.5A2.5,2.5,0,1,0,3.5,6,2.5,2.5,0,0,0,6,8.5Z" fill="#49bcf9"/>
+                </svg>
+
+                <input placeholder="To: Adress or Zip-code" value="" class="inputStyle">
+            </div>
+
+        </div>
+
+        <div class="traveloptions__date">
+        <div>
+            <p>Date</p>
+            <div class="traveloptions__date__field">
+                <svg class="iconInput" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13">
+                <path id="Icon_material-date-range" data-name="Icon material-date-range" d="M8.5,8.85H7.167v1.3H8.5Zm2.667,0H9.833v1.3h1.333Zm2.667,0H12.5v1.3h1.333ZM15.167,4.3H14.5V3H13.167V4.3H7.833V3H6.5V4.3H5.833A1.311,1.311,0,0,0,4.507,5.6L4.5,14.7A1.317,1.317,0,0,0,5.833,16h9.333A1.321,1.321,0,0,0,16.5,14.7V5.6A1.321,1.321,0,0,0,15.167,4.3Zm0,10.4H5.833V7.55h9.333Z" transform="translate(-4.5 -3)" fill="#49bcf9"/>
+                </svg>
+
+                <input type="date" placeholder="dd/mm/yyyy" value="" class="inputStyle">
+            </div>
+        
+        </div>
+        <div>
+            <p>Text</p>
+            <div class="traveloptions__date__field">
+                <svg class="iconInput" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13">
+                <path id="Icon_material-date-range" data-name="Icon material-date-range" d="M8.5,8.85H7.167v1.3H8.5Zm2.667,0H9.833v1.3h1.333Zm2.667,0H12.5v1.3h1.333ZM15.167,4.3H14.5V3H13.167V4.3H7.833V3H6.5V4.3H5.833A1.311,1.311,0,0,0,4.507,5.6L4.5,14.7A1.317,1.317,0,0,0,5.833,16h9.333A1.321,1.321,0,0,0,16.5,14.7V5.6A1.321,1.321,0,0,0,15.167,4.3Zm0,10.4H5.833V7.55h9.333Z" transform="translate(-4.5 -3)" fill="#49bcf9"/>
+                </svg>
+
+                <input type="time" placeholder="dd/mm/yyyy" value="" class="inputStyle">
+            </div>
+
+        </div>
+
+        <button class="traveloptions__optionsbutton">
+            <p>Zie mogelijkheden</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+            <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M5.1,3.451l.595-.61a.629.629,0,0,1,.908,0L11.811,8.18a.669.669,0,0,1,0,.932L6.6,14.454a.629.629,0,0,1-.908,0l-.595-.61a.672.672,0,0,1,.011-.943L8.34,9.746H.643A.65.65,0,0,1,0,9.087V8.208a.65.65,0,0,1,.643-.659h7.7L5.113,4.394A.667.667,0,0,1,5.1,3.451Z" transform="translate(0 -2.647)" fill="#fff"/>
+            </svg>
+        </button>    
+    </div>
+</div>
+
+    <div class="filter">
+        <p>Filter transport types</p>
+        <div class="filter__container">
+            <button @click.prevent="()=>{FilterTypeOn = !FilterTypeOn}" class="filter__container__button" :class={active:FilterTypeOn}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12">
+                <path id="Icon_material-train" data-name="Icon material-train" d="M11,3C8.5,3,6,3.316,6,5.526v6a2.2,2.2,0,0,0,2.188,2.211l-.938.947V15H8.644l1.25-1.263H12.25L13.5,15h1.25v-.316l-.937-.947A2.2,2.2,0,0,0,16,11.526v-6C16,3.316,13.763,3,11,3ZM8.188,12.474a.947.947,0,1,1,.938-.947A.941.941,0,0,1,8.188,12.474Zm2.187-4.421H7.25V5.526h3.125Zm1.25,0V5.526H14.75V8.053Zm2.188,4.421a.947.947,0,1,1,.938-.947A.941.941,0,0,1,13.813,12.474Z" transform="translate(-6 -3)" fill="#fff"/>
+                </svg>
+                <p>Trein</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.41" height="10" viewBox="0 0 13.41 10">
+                <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M4.555,14.381.2,10.022a.671.671,0,0,1,0-.948l.948-.948a.67.67,0,0,1,.948,0l2.936,2.936,6.288-6.288a.671.671,0,0,1,.948,0l.948.948a.671.671,0,0,1,0,.948L5.5,14.381A.67.67,0,0,1,4.555,14.381Z" transform="translate(0 -4.577)" fill="#fff"/>
+                </svg>
+            </button>
+
+            <button @click.prevent="()=>{FilterTypeOn = !FilterTypeOn}" class="filter__container__button" :class={active:FilterTypeOn}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8.75" height="14" viewBox="0 0 8.75 14">
+                <path id="Icon_awesome-walking" data-name="Icon awesome-walking" d="M5.688,2.625A1.312,1.312,0,1,0,4.375,1.312,1.313,1.313,0,0,0,5.688,2.625ZM8.271,6.7l-.637-.323-.265-.8A2.981,2.981,0,0,0,4.575,3.5a6.012,6.012,0,0,0-2.551.689A2.608,2.608,0,0,0,.665,5.451l-.183.372A.878.878,0,0,0,.87,7a.863.863,0,0,0,1.162-.391l.183-.372a.869.869,0,0,1,.451-.421l.733-.3L2.984,7.176a1.756,1.756,0,0,0,.407,1.608l1.638,1.788a1.764,1.764,0,0,1,.407.757l.5,2a.875.875,0,1,0,1.7-.424l-.607-2.433a1.749,1.749,0,0,0-.407-.757L5.376,8.36l.47-1.878L6,6.933a1.744,1.744,0,0,0,.867,1.012l.637.323a.863.863,0,0,0,1.162-.391A.885.885,0,0,0,8.271,6.7ZM2.013,10.547a1.7,1.7,0,0,1-.388.588L.258,12.5a.875.875,0,0,0,1.236,1.238l1.624-1.624a1.777,1.777,0,0,0,.388-.588l.369-.924c-1.512-1.649-1.058-1.143-1.3-1.468l-.566,1.408Z" transform="translate(-0.002)" fill="#fff"/>
+                </svg>
+                <p>Lopen</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.41" height="10" viewBox="0 0 13.41 10">
+                <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M4.555,14.381.2,10.022a.671.671,0,0,1,0-.948l.948-.948a.67.67,0,0,1,.948,0l2.936,2.936,6.288-6.288a.671.671,0,0,1,.948,0l.948.948a.671.671,0,0,1,0,.948L5.5,14.381A.67.67,0,0,1,4.555,14.381Z" transform="translate(0 -4.577)" fill="#fff"/>
+                </svg>
+            </button>
+
+            <button @click.prevent="()=>{FilterTypeOn = !FilterTypeOn}" class="filter__container__button" :class={active:FilterTypeOn}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.551" height="11.551" viewBox="0 0 11.551 11.551">
+                <path id="Icon_awesome-bus" data-name="Icon awesome-bus" d="M11.009,2.888h-.18V1.8C10.829.794,8.591,0,5.775,0S.722.794.722,1.8V2.888H.541A.541.541,0,0,0,0,3.429v1.8a.542.542,0,0,0,.541.541h.18v3.61a.722.722,0,0,0,.722.722v.722a.722.722,0,0,0,.722.722h.722a.722.722,0,0,0,.722-.722v-.722H7.941v.722a.722.722,0,0,0,.722.722h.722a.722.722,0,0,0,.722-.722v-.722h.144a.569.569,0,0,0,.578-.578V5.775h.18a.542.542,0,0,0,.541-.541v-1.8A.541.541,0,0,0,11.009,2.888ZM2.527,9.024A.722.722,0,1,1,3.249,8.3.722.722,0,0,1,2.527,9.024ZM2.888,6.5a.722.722,0,0,1-.722-.722V2.888a.722.722,0,0,1,.722-.722H8.663a.722.722,0,0,1,.722.722V5.775a.722.722,0,0,1-.722.722ZM9.024,9.024A.722.722,0,1,1,9.746,8.3.722.722,0,0,1,9.024,9.024Z" fill="#fff"/>
+                </svg>
+                <p>Bus</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.41" height="10" viewBox="0 0 13.41 10">
+                <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M4.555,14.381.2,10.022a.671.671,0,0,1,0-.948l.948-.948a.67.67,0,0,1,.948,0l2.936,2.936,6.288-6.288a.671.671,0,0,1,.948,0l.948.948a.671.671,0,0,1,0,.948L5.5,14.381A.67.67,0,0,1,4.555,14.381Z" transform="translate(0 -4.577)" fill="#fff"/>
+                </svg>
+            </button>
+            
+            <button @click.prevent="()=>{FilterTypeOn = !FilterTypeOn}" class="filter__container__button" :class={active:FilterTypeOn}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.086" height="13.551" viewBox="0 0 8.086 11.551">
+                <path id="Icon_material-tram" data-name="Icon material-tram" d="M15.586,11.628V6.754c0-1.611-1.507-1.964-3.471-2.016l.439-.872H14.43V3H8.655v.866H11.4l-.439.878C9.152,4.8,7.5,5.154,7.5,6.754v4.874A1.852,1.852,0,0,0,9,13.344l-.918.918v.289H9.365L10.521,13.4H12.7l1.155,1.155h1.155v-.289l-.866-.866H14.1C15.072,13.4,15.586,12.6,15.586,11.628Zm-4.043.9a.866.866,0,1,1,.866-.866A.865.865,0,0,1,11.543,12.529Zm2.888-2.6H8.655V7.043H14.43Z" transform="translate(-7.5 -3)" fill="#fff"/>
+                </svg>
+                <p>Metro</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.41" height="10" viewBox="0 0 13.41 10">
+                <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M4.555,14.381.2,10.022a.671.671,0,0,1,0-.948l.948-.948a.67.67,0,0,1,.948,0l2.936,2.936,6.288-6.288a.671.671,0,0,1,.948,0l.948.948a.671.671,0,0,1,0,.948L5.5,14.381A.67.67,0,0,1,4.555,14.381Z" transform="translate(0 -4.577)" fill="#fff"/>
+                </svg>
+            </button>
+
+            <button @click.prevent="()=>{FilterTypeOn = !FilterTypeOn}" class="filter__container__button" :class={active:FilterTypeOn}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.086" height="13.551" viewBox="0 0 8.086 11.551">
+                <path id="Icon_material-tram" data-name="Icon material-tram" d="M15.586,11.628V6.754c0-1.611-1.507-1.964-3.471-2.016l.439-.872H14.43V3H8.655v.866H11.4l-.439.878C9.152,4.8,7.5,5.154,7.5,6.754v4.874A1.852,1.852,0,0,0,9,13.344l-.918.918v.289H9.365L10.521,13.4H12.7l1.155,1.155h1.155v-.289l-.866-.866H14.1C15.072,13.4,15.586,12.6,15.586,11.628Zm-4.043.9a.866.866,0,1,1,.866-.866A.865.865,0,0,1,11.543,12.529Zm2.888-2.6H8.655V7.043H14.43Z" transform="translate(-7.5 -3)" fill="#fff"/>
+                </svg>
+                <p>Tram</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.41" height="10" viewBox="0 0 13.41 10">
+                <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M4.555,14.381.2,10.022a.671.671,0,0,1,0-.948l.948-.948a.67.67,0,0,1,.948,0l2.936,2.936,6.288-6.288a.671.671,0,0,1,.948,0l.948.948a.671.671,0,0,1,0,.948L5.5,14.381A.67.67,0,0,1,4.555,14.381Z" transform="translate(0 -4.577)" fill="#fff"/>
+                </svg>
+            </button>
+
+            <button @click.prevent="()=>{FilterTypeOn = !FilterTypeOn}" class="filter__container__button" :class={active:FilterTypeOn}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14.539" height="12.107" viewBox="0 0 10.539 8.107">
+                <path id="Icon_awesome-car-alt" data-name="Icon awesome-car-alt" d="M9.631,7.632l-.247-.593L8.947,5.986A2.448,2.448,0,0,0,6.664,4.5H3.875A2.449,2.449,0,0,0,1.592,5.986L1.154,7.038l-.247.593A1.352,1.352,0,0,0,0,8.891V9.9a1.311,1.311,0,0,0,.351.885v1.142a.69.69,0,0,0,.7.676h.7a.69.69,0,0,0,.7-.676v-.676H8.08v.676a.69.69,0,0,0,.7.676h.7a.69.69,0,0,0,.7-.676V10.79a1.311,1.311,0,0,0,.351-.885V8.891A1.352,1.352,0,0,0,9.631,7.632ZM2.9,6.488a1.055,1.055,0,0,1,.979-.637H6.664a1.055,1.055,0,0,1,.979.637L8.08,7.54H2.459L2.9,6.488ZM1.757,9.9a.674.674,0,1,1,0-1.347A1.327,1.327,0,0,1,2.81,9.564C2.81,9.968,2.178,9.9,1.757,9.9Zm7.026,0c-.422,0-1.054.067-1.054-.337a1.327,1.327,0,0,1,1.054-1.01.674.674,0,1,1,0,1.347Z" transform="translate(0 -4.5)" fill="#fff"/>
+                </svg>
+                <p>Taxi</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.41" height="12" viewBox="0 0 13.41 10">
+                <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M4.555,14.381.2,10.022a.671.671,0,0,1,0-.948l.948-.948a.67.67,0,0,1,.948,0l2.936,2.936,6.288-6.288a.671.671,0,0,1,.948,0l.948.948a.671.671,0,0,1,0,.948L5.5,14.381A.67.67,0,0,1,4.555,14.381Z" transform="translate(0 -4.577)" fill="#fff"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="options">
+        <p>Beschikbare mogelijkheden</p>
+
+        <div class="options__field">
+            <div class="options__field__name">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19">
+                <path id="Icon_awesome-car-alt" data-name="Icon awesome-car-alt" d="M21.933,11.839l-.562-1.39-1-2.466a5.573,5.573,0,0,0-5.2-3.483H8.825a5.573,5.573,0,0,0-5.2,3.483l-1,2.466-.562,1.39A3.161,3.161,0,0,0,0,14.792v2.375a3.122,3.122,0,0,0,.8,2.075v2.675A1.592,1.592,0,0,0,2.4,23.5H4a1.592,1.592,0,0,0,1.6-1.583V20.333H18.4v1.583A1.592,1.592,0,0,0,20,23.5h1.6a1.592,1.592,0,0,0,1.6-1.583V19.241a3.12,3.12,0,0,0,.8-2.075V14.792A3.161,3.161,0,0,0,21.933,11.839ZM6.6,9.159A2.4,2.4,0,0,1,8.825,7.667h6.35A2.4,2.4,0,0,1,17.4,9.159l1,2.466H5.6l1-2.466Zm-2.6,8a1.5,1.5,0,0,1-1.6-1.578A1.5,1.5,0,0,1,4,14a3.062,3.062,0,0,1,2.4,2.368C6.4,17.315,4.96,17.157,4,17.157Zm16,0c-.96,0-2.4.158-2.4-.789A3.062,3.062,0,0,1,20,14a1.5,1.5,0,0,1,1.6,1.578A1.5,1.5,0,0,1,20,17.157Z" transform="translate(0 -4.5)" fill="#49bcf9"/>
+                </svg>
+                <p>Van Helvoort Taxi Group B.V.</p>
+            </div>
+
+            <div class="options__field__info">
+                <div class="options__field__info__TOA">
+                    <p>Aankomsttijd</p>
+                    <p class="options__field__info__TOA__time">20:50</p>
+                </div>
+                <div class="options__field__info__place">
+                    <p>Plaats</p>
+                    <p class="options__field__info__place__place">Eindhoven</p>
+                </div>
+                <div class="options__field__info__info">
+                    <p>Meer info</p>
+                </div>
+            </div>       
+
+        </div>
+    </div>
+</main>
